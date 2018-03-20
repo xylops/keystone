@@ -57,6 +57,7 @@ keystone.set('nav', {
 	galleries: 'galleries',
 	enquiries: 'enquiries',
 	users: 'users',
+	carousel: ['carousel', 'carouselCate']
 });
 
 // Start Keystone to connect to your database and initialise the web server
