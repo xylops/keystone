@@ -8,6 +8,8 @@ exports = module.exports = function (req, res) {
 	// Set locals
 	locals.section = 'carousel';
 
+	view.query('carousel', keystone.list('carousel').model.find().populate('author'));
+
 	// Render the view
 	view.render('carousel');
 

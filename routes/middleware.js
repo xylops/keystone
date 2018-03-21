@@ -53,6 +53,7 @@ exports.requireUser = function (req, res, next) {
 		req.flash('error', 'Please sign in to access this page.');
 		res.redirect('/keystone/signin');
 	} else {
+		console.log(req.user)
 		next();
 	}
 };
